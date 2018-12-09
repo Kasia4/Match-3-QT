@@ -4,6 +4,7 @@
         <file>fruit.qml</file>
         <file>gameLogic.js</file>
         <file>GameArea.qml</file>
+        <file>GameOverDialog.qml</file>
     </qresource>
     <qresource prefix="/images">
         <file>images/apple.png</file>
@@ -13,5 +14,6 @@
         <file>images/banana.png</file>
         <file>images/watermelon.png</file>
         <file>images/pear.png</file>
+        <file>images/text-gameover.png</file>
     </qresource>
 </RCC>

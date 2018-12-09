@@ -16,4 +16,7 @@ Item {
 
     // array for handling game field
     property var field: []
+
+    // game over signal
+    signal gameOver()
 }
