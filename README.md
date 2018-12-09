@@ -1,0 +1,1 @@
+Simple match-3 game in QT using QML and JavaScript
