@@ -27,12 +27,16 @@ Item {
     property int row
     property int column
 
-    // emit a signal when block is clicked
     signal clicked(int row, int column, int type)
 
     property bool dying: false
 
     property bool spawned: false
+
+    width: parent.blockSize
+    height: parent.blockSize
+    x: column * width
+    y: row * height
 
     Behavior on x {
         enabled: spawned;
@@ -47,7 +51,6 @@ Item {
         id: sys
         anchors.centerIn: parent
         ImageParticle {
-            // ![0]
             source: {
               if (type == 0)
                 return "images/images/apple.png"
@@ -61,7 +64,6 @@ Item {
                 return "images/images/watermelon.png"
             }
             rotationVelocityVariation: 180
-            // ![0]
         }
 
         Emitter {
@@ -90,7 +92,6 @@ Item {
         }
     ]
 
-    // handle click event on blocks (trigger clicked signal)
     MouseArea {
      anchors.fill: parent
      onClicked: parent.clicked(row, column, type)

@@ -24,6 +24,7 @@ Dialog {
                     color: "navy"
                 }
             }
+
             MouseArea {
                anchors.fill: parent
                onClicked: gameOverDialog.newGameClicked()
